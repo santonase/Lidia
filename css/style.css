@@ -180,16 +180,34 @@ body {
     flex: 0 1 50%;
 }
 .images-hero {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 27px;
 }
 .images-hero__item {
 }
 .images-hero__item--01 {
+    grid-row: span 2;
+    align-self: end;
+    padding-bottom: 10px;
 }
 .images-hero__image {
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.25);
 }
 .images-hero__item--02 {
+    padding-bottom: 30px;
 }
 .images-hero__item--03 {
+    grid-row: span 2;
+    align-self: center;
+    justify-self: end;
+    padding-bottom: 45px;
 }
 .images-hero__item--04 {
+    align-self: end;
+    justify-self: end; 
 }
